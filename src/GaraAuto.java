@@ -1,10 +1,22 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class GaraAuto {
-    public static void main(String[] args) {
+import java.io.*;
+import java.util.*;
 
-        Auto a =  new Auto();
-        Thread ta = new Thread(a);
-        ta.start();
-    }
+public class GaraAuto {
+
+	private List<Auto> autoList;
+	private double distanzaGara;
+	private Giudice podio;
+
+	public void avviaGara() {
+		throw new UnsupportedOperationException("The method is not implemented yet.");
+	}
+
+	public void attendiFineGara() {
+		throw new UnsupportedOperationException("The method is not implemented yet.");
+	}
+
+	public void mostraPodio() {
+		throw new UnsupportedOperationException("The method is not implemented yet.");
+	}
+
 }

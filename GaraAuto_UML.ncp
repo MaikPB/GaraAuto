@@ -1,0 +1,87 @@
+<Project>
+  <Name>GaraAuto</Name>
+  <ProjectItem type="NClass.DiagramEditor.ClassDiagram.Diagram" assembly="NClass.DiagramEditor, Version=2.4.1823.0, Culture=neutral, PublicKeyToken=null">
+    <Name>Untitled</Name>
+    <Language>Java</Language>
+    <Entities>
+      <Entity type="Class">
+        <Name>Auto</Name>
+        <Access>Public</Access>
+        <Location left="395" top="75" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private int numero</Member>
+        <Member type="Field">private double velocita</Member>
+        <Member type="Field">private doulbe distanzaPercorsa</Member>
+        <Member type="Field">private boolean inBox</Member>
+        <Member type="Field">private Giudice podio</Member>
+        <Member type="Method">public void run()</Member>
+        <Member type="Method">public void pitStop()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>GaraAuto</Name>
+        <Access>Public</Access>
+        <Location left="76" top="247" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;Auto&gt; autoList</Member>
+        <Member type="Field">private double distanzaGara</Member>
+        <Member type="Field">private Giudice podio</Member>
+        <Member type="Method">public void avviaGara()</Member>
+        <Member type="Method">public void attendiFineGara()</Member>
+        <Member type="Method">public void mostraPodio()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Class">
+        <Name>Giudice</Name>
+        <Access>Public</Access>
+        <Location left="490" top="401" />
+        <Size width="173" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Field">private List&lt;String&gt; classificati</Member>
+        <Member type="Method">public void aggiungiVincitore()</Member>
+        <Member type="Method">public List&lt;String&gt; getClassifica()</Member>
+        <Modifier>None</Modifier>
+      </Entity>
+      <Entity type="Interface">
+        <Name>Thread</Name>
+        <Access>Public</Access>
+        <Location left="673" top="91" />
+        <Size width="162" height="216" />
+        <Collapsed>False</Collapsed>
+        <Member type="Method">void start()</Member>
+        <Member type="Method">void run()</Member>
+        <Member type="Method">void sleep(long ms)</Member>
+        <Member type="Method">void join()</Member>
+      </Entity>
+    </Entities>
+    <Relationships>
+      <Relationship type="Association" first="1" second="0">
+        <Label>has</Label>
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Aggregation</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>*</EndMultiplicity>
+      </Relationship>
+      <Relationship type="Realization" first="0" second="3">
+        <StartOrientation>Horizontal</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+      </Relationship>
+      <Relationship type="Association" first="1" second="2">
+        <StartOrientation>Vertical</StartOrientation>
+        <EndOrientation>Horizontal</EndOrientation>
+        <BendPoint relativeToStartShape="True">
+          <X>140</X>
+          <Y>558</Y>
+        </BendPoint>
+        <Direction>Unidirectional</Direction>
+        <AssociationType>Association</AssociationType>
+        <StartMultiplicity>1</StartMultiplicity>
+        <EndMultiplicity>1</EndMultiplicity>
+      </Relationship>
+    </Relationships>
+  </ProjectItem>
+</Project>

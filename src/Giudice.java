@@ -1,19 +1,15 @@
 import java.io.*;
 import java.util.*;
 
-public class Auto implements Thread {
+public class Giudice {
 
-	private int numero;
-	private double velocita;
-	private double distanzaPercorsa;
-	private boolean inBox;
-	private Giudice podio;
+	private List<String> classificati;
 
-	public void run() {
+	public void aggiungiVincitore() {
 		throw new UnsupportedOperationException("The method is not implemented yet.");
 	}
 
-	public void pitStop() {
+	public List<String> getClassifica() {
 		throw new UnsupportedOperationException("The method is not implemented yet.");
 	}
 

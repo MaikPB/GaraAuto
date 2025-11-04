@@ -1,7 +1,7 @@
 import java.io.*;
 import java.util.*;
 
-public class Auto implements Thread {
+public class Auto extends Thread {
 
 	private int numero;
 	private double velocita;

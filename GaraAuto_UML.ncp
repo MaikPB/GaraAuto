@@ -47,7 +47,7 @@
       <Entity type="Interface">
         <Name>Thread</Name>
         <Access>Public</Access>
-        <Location left="673" top="91" />
+        <Location left="716" top="75" />
         <Size width="162" height="216" />
         <Collapsed>False</Collapsed>
         <Member type="Method">void start()</Member>
@@ -71,6 +71,8 @@
         <EndOrientation>Horizontal</EndOrientation>
       </Relationship>
       <Relationship type="Association" first="1" second="2">
+        <Label>
+        </Label>
         <StartOrientation>Vertical</StartOrientation>
         <EndOrientation>Horizontal</EndOrientation>
         <BendPoint relativeToStartShape="True">

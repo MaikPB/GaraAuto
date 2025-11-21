@@ -1,22 +1,37 @@
-import java.io.*;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Random;
+import java.util.Scanner;
 
 public class GaraAuto {
 
-	private List<Auto> autoList;
-	private double distanzaGara;
-	private Giudice podio;
+    public static void main(String[] args) {
 
-	public void avviaGara() {
-		throw new UnsupportedOperationException("The method is not implemented yet.");
-	}
+        Scanner sc = new Scanner(System.in);
+        Random rand = new Random();
 
-	public void attendiFineGara() {
-		throw new UnsupportedOperationException("The method is not implemented yet.");
-	}
+        System.out.println("Inserisci numero partecipanti:");
+        int n = sc.nextInt();
 
-	public void mostraPodio() {
-		throw new UnsupportedOperationException("The method is not implemented yet.");
-	}
+        System.out.println("Inserisci lunghezza della gara in metri:");
+        double lunghezza = sc.nextDouble();
 
+        List<Auto> partecipanti = new ArrayList<>();
+
+        for (int i = 1; i <= n; i++) {
+            System.out.println("\nNome auto " + i + ":");
+            String nome = sc.next();
+
+            double vel = 50 + rand.nextDouble() * 40;  // 40 = (90 - 50)
+
+            System.out.println("Velocità di " + nome + ": " + vel + " m/s");
+
+            partecipanti.add(new Auto(nome, vel, lunghezza));
+        }
+
+        Giudice giudice = new Giudice(partecipanti, lunghezza);
+        giudice.startGara();
+
+        sc.close();
+    }
 }

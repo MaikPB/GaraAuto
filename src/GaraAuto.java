@@ -33,5 +33,12 @@ public class GaraAuto {
         giudice.startGara();
 
         sc.close();
+
+        GestoreFile gf = new GestoreFile();
+
+        Giudice(gf);
+
+        gf.leggiFile();
     }
+
 }

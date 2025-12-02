@@ -9,6 +9,7 @@ public class Giudice {
 
     private List<Auto> partecipanti;
     private double lunghezzaGara;
+    private GestoreFile;
 
     public Giudice(List<Auto> partecipanti, double lunghezzaGara) {
         this.partecipanti = partecipanti;
@@ -47,4 +48,6 @@ public class Giudice {
             pos++;
         }
     }
+
+
 }

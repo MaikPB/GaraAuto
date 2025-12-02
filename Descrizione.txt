@@ -1,0 +1,10 @@
+All’inizio chiede all’utente quante auto vuole far partecipare e quanto è lunga la gara. Per ogni auto viene chiesto il nome e viene assegnata una velocità casuale.
+
+Ogni auto è rappresentata dalla classe Auto, che funziona come un piccolo “processo” che corre da solo. Nel suo metodo run(), l’auto ogni secondo aumenta i metri percorsi in base alla propria velocità e li stampa sullo schermo. Quando un’auto arriva alla fine del percorso, avvisa il giudice usando il metodo Giudice.notificaArrivo().
+
+La classe Auto contiene anche altri metodi, come getNome() e getPosizione(), che servono per ottenere rispettivamente il nome dell’auto e i metri percorsi. È presente anche il metodo ferma(), che mette la variabile inGara a false e permette di interrompere la corsa se necessario.
+
+Il giudice, nella classe Giudice, fa partire tutte le auto con il metodo startGara(), che richiama a.start() su ogni auto, e poi aspetta che finiscano grazie a a.join(). Quando un'auto arriva, viene aggiunta alla classifica tramite il metodo sincronizzato notificaArrivo().
+
+Alla fine, il giudice stampa la classifica nell’ordine in cui le auto hanno tagliato il traguardo usando il metodo stampaClassifica(). 
+
